@@ -186,8 +186,13 @@ $(function () {
         animateOnScroll();
 
         // Check for animations on scroll with throttling
-        var throttledScroll = _.throttle(animateOnScroll, 100);
-        $(window).on('scroll', throttledScroll);
+        if (typeof _ !== 'undefined' && _.throttle) {
+            var throttledScroll = _.throttle(animateOnScroll, 100);
+            $(window).on('scroll', throttledScroll);
+        } else {
+            // Fallback without throttling if lodash is not available
+            $(window).on('scroll', animateOnScroll);
+        }
     }
 
     // Initialize animations
