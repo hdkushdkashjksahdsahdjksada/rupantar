@@ -437,7 +437,7 @@ ul.costomer li a {
      max-width: 580px;
      float: right;
      width: 100%;
-     padding: 2rem 0;
+     padding: 0.1rem 0;
 }
 
 .text-bg h1 {
@@ -447,7 +447,7 @@ ul.costomer li a {
      text-transform: none;
      padding-bottom: 1.5rem;
      font-weight: 700;
-     padding-top: 2rem;
+     padding-top: 0.1rem;
      font-family: var(--font-heading);
      /* Use solid white color */
 }
@@ -1347,6 +1347,8 @@ ul.costomer li a {
    padding-bottom: 15px;
    font-weight: bold;
    margin-bottom: 0;
+   padding-top: 0.1rem;
+   margin-top: 0.1rem;
 }
 
 .hero-subtitle {
@@ -1461,6 +1463,8 @@ ul.costomer li a {
 @media (max-width: 768px) {
    .text-bg h1 {
       font-size: 36px;
+      padding-top: 0.1rem;
+      margin-top: 0.1rem;
    }
    
    .startup-stats {
@@ -2680,7 +2684,8 @@ ul.costomer li a {
       float: none;
       max-width: 100%;
       text-align: center;
-      margin: 2rem auto;
+      margin: 0.1rem auto;
+      padding-top: 0.1rem;
    }
    
    .read-more-container {
