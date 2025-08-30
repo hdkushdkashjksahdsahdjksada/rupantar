@@ -676,10 +676,33 @@
             // Close menu when overlay is clicked
             navOverlay.addEventListener('click', closeMenu);
             
-            // Close menu when a navigation link is clicked
+            // Handle navigation link clicks with special handling for anchor links
             const navLinks = document.querySelectorAll('.nav-links a');
             navLinks.forEach(link => {
-               link.addEventListener('click', closeMenu);
+               link.addEventListener('click', function(e) {
+                  const href = this.getAttribute('href');
+                  
+                  // Check if it's a same-page anchor link (starts with #)
+                  if (href && href.startsWith('#')) {
+                     // For anchor links, close menu first, then scroll
+                     closeMenu();
+                     
+                     // Small delay to allow menu close animation to complete
+                     setTimeout(function() {
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                           // Ensure smooth scrolling to the target element
+                           targetElement.scrollIntoView({
+                              behavior: 'smooth',
+                              block: 'start'
+                           });
+                        }
+                     }, 300); // 300ms delay for menu close animation
+                  } else {
+                     // For external links, just close the menu immediately
+                     closeMenu();
+                  }
+               });
             });
             
             // Close menu with Escape key
