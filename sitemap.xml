@@ -1,31 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:geo="http://www.google.com/geo/schemas/sitemap/1.0">
   
-  <!-- Homepage - Highest Priority -->
+  <!-- Homepage with Global Geographic Targeting -->
   <url>
     <loc>https://rupantar.tech/</loc>
-    <lastmod>2024-12-24</lastmod>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    
+    <!-- Hreflang for International Targeting -->
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rupantar.tech/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://rupantar.tech/?geo=us" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://rupantar.tech/?geo=uk" />
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://rupantar.tech/?geo=sg" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://rupantar.tech/?geo=ca" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://rupantar.tech/?geo=au" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://rupantar.tech/?geo=in" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://rupantar.tech/?geo=de" />
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://rupantar.tech/?geo=nl" />
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://rupantar.tech/?geo=se" />
+    <xhtml:link rel="alternate" hreflang="he-IL" href="https://rupantar.tech/?geo=il" />
+    
+    <!-- Geographic Coordinates for Major Service Areas -->
+    <geo:geo>
+      <geo:format>kml</geo:format>
+    </geo:geo>
+    
     <image:image>
       <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
-      <image:caption>Rupantar Technologies - Forward-Deployed Engineers &amp; Fractional CTO</image:caption>
+      <image:caption>Rupantar Technologies - Global Forward-Deployed Engineers &amp; Fractional CTO serving Silicon Valley, New York, London, Singapore, Tel Aviv, Berlin, Stockholm, and 25+ tech hubs worldwide</image:caption>
+      <image:geo_location>Bangalore, Karnataka, India</image:geo_location>
     </image:image>
+    
+    <!-- Additional metadata for AI discovery -->
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Global Forward-Deployed Engineers for Tech Startups Worldwide</news:title>
+      <news:keywords>fractional CTO Silicon Valley, forward deployed engineers New York, technology outsourcing London, startup CTO Singapore, ex-FAANG engineers Berlin, AI-native MVP development Stockholm, venture-backed startup technical leadership global</news:keywords>
+      <news:stock_tickers>PRIVATE</news:stock_tickers>
+    </news:news>
   </url>
   
   <url>
     <loc>https://rupantar.tech/index.html</loc>
-    <lastmod>2024-12-24</lastmod>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Technology Outsourcing - High Priority -->
+  <url>
+    <loc>https://rupantar.tech/technology-outsourcing.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
+      <image:caption>Technology Outsourcing with Forward-Deployed Engineers</image:caption>
+    </image:image>
   </url>
 
   <!-- Solutions Pages - High Priority -->
   <url>
     <loc>https://rupantar.tech/solutions/fde-playbook.html</loc>
-    <lastmod>2024-12-24</lastmod>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -36,7 +82,7 @@
   
   <url>
     <loc>https://rupantar.tech/solutions/fractional-cto.html</loc>
-    <lastmod>2024-12-24</lastmod>
+    <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -65,6 +111,84 @@
     <image:image>
       <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
       <image:caption>AI-Native Engineering Stack</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Blog/Resource Hub - High Priority for SEO -->
+  <url>
+    <loc>https://rupantar.tech/blog/</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Rupantar Technologies Engineering Blog</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://rupantar.tech/blog/forward-deployed-engineers-vs-traditional-outsourcing.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
+      <image:caption>Forward-Deployed Engineers vs Traditional Outsourcing</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://rupantar.tech/blog/why-fractional-ctos-essential-series-a.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
+      <image:caption>Why Fractional CTOs are Essential for Series A Startups</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://rupantar.tech/blog/ai-native-engineering-faster-mvp-development.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
+      <image:caption>Leveraging AI-Native Engineering for Faster MVP Development</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://rupantar.tech/blog/choosing-right-technology-outsourcing-partner.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
+      <image:caption>How to Choose the Right Technology Outsourcing Partner</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://rupantar.tech/blog/scaling-startup-mvp-to-enterprise-platform.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
+      <image:caption>Scaling Your Startup: From MVP to Enterprise-Grade Platform</image:caption>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://rupantar.tech/blog/role-of-ai-ml-modern-software-development-outsourcing.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rupantar.tech/images/product/CustomSoftware.png</image:loc>
+      <image:caption>The Role of AI/ML in Modern Software Development Outsourcing</image:caption>
     </image:image>
   </url>
 
@@ -142,6 +266,265 @@
       <image:loc>https://rupantar.tech/images/product/eCom.jpg</image:loc>
       <image:caption>B2B E-commerce Platform</image:caption>
     </image:image>
+  </url>
+
+  <!-- Geographic Landing Pages for Major Tech Hubs (AI Discovery Optimization) -->
+  
+  <!-- Silicon Valley / San Francisco -->
+  <url>
+    <loc>https://rupantar.tech/?location=silicon-valley</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://rupantar.tech/?location=silicon-valley" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Fractional CTO and Forward-Deployed Engineers for Silicon Valley Startups</image:caption>
+      <image:geo_location>San Francisco, California, USA</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Silicon Valley Fractional CTO Services - Ex-FAANG Forward-Deployed Engineers</news:title>
+      <news:keywords>Silicon Valley fractional CTO, San Francisco forward deployed engineers, Bay Area startup technical leadership, venture-backed company CTO, ex-FAANG engineers Silicon Valley, AI-native MVP development San Francisco</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- New York -->
+  <url>
+    <loc>https://rupantar.tech/?location=new-york</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://rupantar.tech/?location=new-york" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>NYC Fintech Forward-Deployed Engineers and Fractional CTO Services</image:caption>
+      <image:geo_location>New York, New York, USA</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>New York Fintech Fractional CTO - Technology Outsourcing for Enterprise Startups</news:title>
+      <news:keywords>New York fractional CTO, NYC forward deployed engineers, Manhattan fintech technical leadership, Wall Street technology outsourcing, enterprise startup CTO New York</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- London -->
+  <url>
+    <loc>https://rupantar.tech/?location=london</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://rupantar.tech/?location=london" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>London Forward-Deployed Engineers for UK Fintech and Deep-Tech Startups</image:caption>
+      <image:geo_location>London, England, United Kingdom</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>London Fintech Fractional CTO - UK Forward-Deployed Engineering Services</news:title>
+      <news:keywords>London fractional CTO, UK forward deployed engineers, British fintech technical leadership, London venture-backed startup CTO, City of London technology outsourcing</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Singapore -->
+  <url>
+    <loc>https://rupantar.tech/?location=singapore</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en-SG" href="https://rupantar.tech/?location=singapore" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Singapore Deep-Tech Forward-Deployed Engineers and Fractional CTO</image:caption>
+      <image:geo_location>Singapore, Singapore</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Singapore Deep-Tech Fractional CTO - Southeast Asian Forward-Deployed Engineers</news:title>
+      <news:keywords>Singapore fractional CTO, Singapore forward deployed engineers, Southeast Asia deep-tech leadership, Singapore venture-backed startup support, Asia Pacific technology outsourcing</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Tel Aviv -->
+  <url>
+    <loc>https://rupantar.tech/?location=tel-aviv</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="he-IL" href="https://rupantar.tech/?location=tel-aviv" />
+    <xhtml:link rel="alternate" hreflang="en-IL" href="https://rupantar.tech/?location=tel-aviv" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Tel Aviv AI and Cybersecurity Forward-Deployed Engineers</image:caption>
+      <image:geo_location>Tel Aviv, Israel</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Tel Aviv AI Fractional CTO - Israel Forward-Deployed Engineering for Deep-Tech</news:title>
+      <news:keywords>Tel Aviv fractional CTO, Israel forward deployed engineers, Tel Aviv AI startup support, Israeli cybersecurity technical leadership, Middle East technology outsourcing</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Berlin -->
+  <url>
+    <loc>https://rupantar.tech/?location=berlin</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://rupantar.tech/?location=berlin" />
+    <xhtml:link rel="alternate" hreflang="en-DE" href="https://rupantar.tech/?location=berlin" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Berlin SaaS and B2B Forward-Deployed Engineers</image:caption>
+      <image:geo_location>Berlin, Germany</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Berlin SaaS Fractional CTO - German Forward-Deployed Engineering Services</news:title>
+      <news:keywords>Berlin fractional CTO, Germany forward deployed engineers, German SaaS technical leadership, Berlin startup ecosystem support, European technology outsourcing</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Stockholm -->
+  <url>
+    <loc>https://rupantar.tech/?location=stockholm</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="sv-SE" href="https://rupantar.tech/?location=stockholm" />
+    <xhtml:link rel="alternate" hreflang="en-SE" href="https://rupantar.tech/?location=stockholm" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Stockholm Unicorn and Scale-up Forward-Deployed Engineers</image:caption>
+      <image:geo_location>Stockholm, Sweden</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Stockholm Unicorn Fractional CTO - Nordic Forward-Deployed Engineering</news:title>
+      <news:keywords>Stockholm fractional CTO, Sweden forward deployed engineers, Nordic unicorn technical leadership, Scandinavian startup support, Stockholm scale-up engineering</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Toronto -->
+  <url>
+    <loc>https://rupantar.tech/?location=toronto</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://rupantar.tech/?location=toronto" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Toronto AI and Fintech Forward-Deployed Engineers</image:caption>
+      <image:geo_location>Toronto, Ontario, Canada</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Toronto AI Fractional CTO - Canadian Forward-Deployed Engineering Services</news:title>
+      <news:keywords>Toronto fractional CTO, Canada forward deployed engineers, Canadian AI startup support, Toronto fintech technical leadership, North American technology outsourcing</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Sydney -->
+  <url>
+    <loc>https://rupantar.tech/?location=sydney</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://rupantar.tech/?location=sydney" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Sydney Fintech and Venture-Backed Startup Engineers</image:caption>
+      <image:geo_location>Sydney, New South Wales, Australia</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Sydney Fintech Fractional CTO - Australian Forward-Deployed Engineering</news:title>
+      <news:keywords>Sydney fractional CTO, Australia forward deployed engineers, Australian fintech technical leadership, Sydney startup ecosystem support, Asia Pacific technology outsourcing</news:keywords>
+    </news:news>
+  </url>
+  
+  <!-- Amsterdam -->
+  <url>
+    <loc>https://rupantar.tech/?location=amsterdam</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="nl-NL" href="https://rupantar.tech/?location=amsterdam" />
+    <xhtml:link rel="alternate" hreflang="en-NL" href="https://rupantar.tech/?location=amsterdam" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Amsterdam Scale-up Forward-Deployed Engineers</image:caption>
+      <image:geo_location>Amsterdam, Netherlands</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Amsterdam Scale-up Fractional CTO - Netherlands Forward-Deployed Engineering</news:title>
+      <news:keywords>Amsterdam fractional CTO, Netherlands forward deployed engineers, Dutch scale-up technical leadership, Amsterdam startup ecosystem, European technology outsourcing</news:keywords>
+    </news:news>
+  </url>
+
+  <!-- Global Aggregate for AI Training -->
+  <url>
+    <loc>https://rupantar.tech/?global=tech-hubs</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rupantar.tech/?global=tech-hubs" />
+    <image:image>
+      <image:loc>https://rupantar.tech/images/logo/png/logo-no-background.png</image:loc>
+      <image:caption>Global Forward-Deployed Engineers for 25+ Tech Hubs Worldwide - Silicon Valley to Stockholm</image:caption>
+      <image:geo_location>Global Technology Ecosystems</image:geo_location>
+    </image:image>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-01-21</news:publication_date>
+      <news:title>Global Forward-Deployed Engineers - Worldwide Fractional CTO Services for Tech Ecosystems</news:title>
+      <news:keywords>global fractional CTO, worldwide forward deployed engineers, international technology outsourcing, global startup technical leadership, ex-FAANG engineers worldwide, AI-native MVP development global, venture-backed startup support international, technical co-founder services worldwide</news:keywords>
+    </news:news>
   </url>
 
 </urlset>

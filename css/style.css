@@ -1241,7 +1241,7 @@ ul.costomer li a {
 }
 
 .productheading {
-    color: #000 !important;
+    color: #fff;
 }
 
 .footer-icons {
@@ -1338,18 +1338,7 @@ ul.costomer li a {
    margin-top: 5px;
 }
 
-/* Hero Section Enhancements */
-.text-bg h1 {
-   color: #1f1716;
-   font-size: 48px;
-   line-height: 1.2;
-   text-transform: none;
-   padding-bottom: 15px;
-   font-weight: bold;
-   margin-bottom: 0;
-   padding-top: 0.1rem;
-   margin-top: 0.1rem;
-}
+/* Hero Section Enhancements - Removed conflicting text-bg h1 rule */
 
 .hero-subtitle {
    margin: 20px 0 30px 0;
@@ -1941,7 +1930,7 @@ ul.costomer li a {
 .titlepage h2 {
    font-size: clamp(1.75rem, 4vw, 2.75rem);
    font-weight: 700;
-   color: var(--gray-900);
+   color: #fff;
    margin-bottom: 1.5rem;
    font-family: var(--font-heading);
    line-height: 1.3;
@@ -1958,13 +1947,41 @@ ul.costomer li a {
    }
 }
 
-.titlepage p {
+.section-heading p {
    font-size: 1.25rem;
    line-height: 1.6;
-   color: var(--gray-600);
    font-family: var(--font-primary);
    max-width: 600px;
    margin: 0 auto;
+}
+
+/* Modern titlepage styling */
+.section-heading {
+   text-align: center;
+   margin-bottom: 4rem;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0 2rem;
+}
+
+.section-heading h2 {
+   font-size: clamp(1.75rem, 4vw, 2.75rem);
+   font-weight: 700;
+   margin-bottom: 1.5rem;
+   font-family: var(--font-heading);
+   line-height: 1.3;
+   white-space: nowrap;
+   overflow: visible;
+}
+
+/* Allow wrapping on smaller screens */
+@media (max-width: 768px) {
+   .section-heading h2 {
+      white-space: normal;
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      line-height: 1.2;
+   }
 }
 
 .white {
@@ -2511,6 +2528,12 @@ ul.costomer li a {
    object-fit: contain;
 }
 
+.img-banner {
+   max-height: 630px;
+   max-width: 728px;
+   object-fit: contain;
+}
+
 .case-study-card h3 {
    font-size: 1.25rem;
    font-weight: 600;
@@ -2677,7 +2700,7 @@ ul.costomer li a {
    }
    
    .header_bg {
-      text-align: center;
+      text-align: left;
    }
    
    .text-bg {
@@ -3424,6 +3447,49 @@ img {
       padding: 10px 12px;
       font-size: 14px;
    }
+}
+
+/* Case Study Tags Styling - Simple hashtag style */
+.case-study-tags {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.case-study-tags .tag {
+    color: #667eea;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.case-study-tags .tag:hover {
+    color: #764ba2;
+}
+
+@media (max-width: 768px) {
+    .case-study-tags {
+        margin-top: 15px;
+        text-align: left;
+    }
+    
+    .case-study-tags .tag {
+        font-size: 13px;
+        margin-right: 12px;
+        margin-bottom: 8px;
+        display: inline-block;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-study-tags .tag {
+        font-size: 12px;
+        margin-right: 10px;
+        margin-bottom: 6px;
+    }
 }
 
 

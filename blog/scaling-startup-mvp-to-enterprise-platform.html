@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- Google Search console -->
+      <meta name="google-site-verification" content="QSgln_VzPj3s2Onxy67Heujw8siK5VW_UJ4tMhIm6Os" />
+      <!-- site metas -->
+      <title>Scaling Your Startup: From MVP to Enterprise-Grade Platform with Strategic Architecture</title>
+      <meta name="keywords" content="startup scaling, MVP to enterprise, enterprise architecture, startup growth, technical scaling, platform architecture, enterprise-grade software, startup technical strategy">
+      <meta name="description" content="The journey from MVP to enterprise platform requires careful technical planning. Learn how fractional CTOs guide architecture decisions that enable rapid scaling.">
+      <meta name="author" content="Rupantar Technologies Pvt Ltd">
+      
+      <!-- Canonical URL -->
+      <link rel="canonical" href="https://rupantar.tech/blog/scaling-startup-mvp-to-enterprise-platform.html">
+      
+      <!-- Open Graph Meta Tags -->
+      <meta property="og:title" content="Scaling Your Startup: From MVP to Enterprise-Grade Platform">
+      <meta property="og:description" content="Learn how to scale your startup from MVP to enterprise platform with strategic architecture decisions and technical planning.">
+      <meta property="og:type" content="article">
+      <meta property="og:url" content="https://rupantar.tech/blog/scaling-startup-mvp-to-enterprise-platform.html">
+      <meta property="og:image" content="https://rupantar.tech/images/logo/png/logo-no-background.png">
+      <meta property="og:site_name" content="Rupantar Technologies">
+      
+      <!-- Performance Optimization -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      
+      <!-- Google Fonts -->
+      <link rel="preload" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"></noscript>
+      
+      <!-- Critical CSS -->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <link rel="stylesheet" href="../css/style.css">
+      
+      <!-- External CSS - Load Asynchronously with Media Queries -->
+      <link rel="preload" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"></noscript>
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" media="screen">
+      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" media="screen"></noscript>
+      
+      <!-- Add Swiper CSS -->
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css"></noscript>
+      
+      <!-- Add Slick CSS -->
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"></noscript>
+      <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"></noscript>
+      
+      <link rel="icon" href="../images/favicon_io/favicon.ico" type="image/x-icon" //
+      <link rel="icon" href="../images/favicon_io/favicon-32x32.png" type="image/png" sizes="32x32">
+      <link rel="icon" href="../images/favicon_io/favicon-16x16.png" type="image/png" sizes="16x16">
+      <link rel="apple-touch-icon" href="../images/favicon_io/apple-touch-icon.png">
+      
+      <!-- Structured Data - BlogPosting -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Scaling Your Startup: From MVP to Enterprise-Grade Platform with Strategic Architecture",
+        "description": "The journey from MVP to enterprise platform requires careful technical planning. Learn how fractional CTOs guide architecture decisions that enable rapid scaling.",
+        "author": {
+          "@type": "Organization",
+          "name": "Rupantar Technologies Pvt Ltd",
+          "url": "https://rupantar.tech"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Rupantar Technologies Pvt Ltd",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://rupantar.tech/images/logo/png/logo-no-background.png"
+          }
+        },
+        "datePublished": "2025-01-17",
+        "dateModified": "2025-01-21",
+        "url": "https://rupantar.tech/blog/scaling-startup-mvp-to-enterprise-platform.html",
+        "articleSection": "Startup Scaling",
+        "keywords": ["startup scaling", "enterprise architecture", "technical strategy", "MVP evolution", "platform development"],
+        "wordCount": 2600,
+        "articleBody": "The transition from MVP to enterprise platform represents one of the most critical phases in startup evolution..."
+      }
+      </script>
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- Hamburger Menu -->
+      <button class="hamburger-menu" id="hamburger-toggle">
+        <div class="hamburger-icon">
+           <span></span>
+           <span></span>
+           <span></span>
+        </div>
+     </button>
+     
+     <!-- Navigation Overlay -->
+     <div class="nav-overlay" id="nav-overlay"></div>
+     
+     <!-- Navigation Panel -->
+     <div class="nav-panel" id="nav-panel">
+        <nav>
+           <div class="nav-section">
+              <h3>📞 Contact</h3>
+              <ul class="nav-links">
+                 <li><a href="#contact" class="nav-cta">Get Started Today</a></li>
+              </ul>
+           </div>
+           
+           <div class="nav-section">
+              <h3>🔧 Technology</h3>
+              <ul class="nav-links">
+                 <li><a href="../tech/techstack.html">AI-Native Tech Stack & Development Tools</a></li>
+                 <li><a href="../technology-outsourcing.html">Technology Outsourcing with Forward-Deployed Engineers</a></li>
+              </ul>
+           </div>
+           
+           <div class="nav-section">
+              <h3>📰 Resources</h3>
+              <ul class="nav-links">
+                 <li><a href="../blog/index.html">Engineering Blog & Startup Insights</a></li>
+              </ul>
+           </div>
+           
+           <div class="nav-section">
+              <h3>🛠️ Solutions</h3>
+              <ul class="nav-links">
+                 <li><a href="../solutions/fde-playbook.html">Forward-Deployed Engineers Playbook & Methodology</a></li>
+                 <li><a href="../solutions/fractional-cto.html">Fractional CTO Services for Startups</a></li>
+                 <li><a href="../solutions/for-startups.html">Startup Development Solutions & MVP Services</a></li>
+              </ul>
+           </div>
+           
+           <div class="nav-section">
+              <h3>💼 Case Studies</h3>
+              <ul class="nav-links">
+                 <li><a href="../client/Quikr.html" class="active">Quikr Marketplace Scaling Case Study</a></li>
+                 <li><a href="../client/Cliky.html">Cliky AI-Powered B2B Sales CRM Case Study</a></li>
+                 <li><a href="../client/Bengal.html">Bengal Remedis Pharma Operations Case Study</a></li>
+                 <li><a href="../client/Simplify.html">Simplify VMS Real-Time Data Platform Case Study</a></li>
+                 <li><a href="../client/Realbuild.html">RealBuild Construction E-commerce Platform Case Study</a></li>
+              </ul>
+           </div>
+           
+           <div class="nav-section">
+              <h3>🏠 Home</h3>
+              <ul class="nav-links">
+                 <li><a href="../index.html">Rupantar Technologies - Fractional CTO & Forward-Deployed Engineers</a></li>
+              </ul>
+           </div>
+        </nav>
+     </div>
+      
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="../images/loading.gif" alt="Loading Blog Article" loading="lazy" width="280" height="280" /></div>
+      </div>
+      <!-- end loader -->
+      
+      <!-- Header -->
+      <header>
+         <div class="header_bg">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="../index.html"><img src="../images/logo/png/logo-no-background.png" alt="Rupantar Technologies Logo" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <ul class="costomer">
+                           <p><a aria-label="Chat on WhatsApp" href="https://wa.me/+919686269013"> <img alt="Chat on WhatsApp" src="../images/wa/WhatsAppButtonWhiteMedium.svg" loading="lazy" /></a></p>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      
+      <!-- Article Content -->
+      <div class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <div class="article-meta" style="margin-bottom: 20px; text-align: center;">
+                        <span class="blog-category">Startup Scaling</span>
+                        <span style="margin-left: 20px;">January 17, 2025 • 12 min read</span>
+                     </div>
+                     <h2>Scaling Your Startup: From MVP to <span class="white">Enterprise-Grade Platform</span></h2>
+                     <p>The journey from MVP to enterprise platform requires careful technical planning and strategic architecture decisions. Learn how successful startups navigate this critical transition without rebuilding from scratch.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="Soft-box">
+                     <h3>The MVP-to-Enterprise Evolution Challenge</h3>
+                     <p>Most successful startups face a paradox: the speed and shortcuts that enabled MVP success become technical debt that limits enterprise scaling. The key is evolving your architecture strategically, not rebuilding from scratch.</p>
+                     <p>Critical scaling transitions include:</p>
+                     <ul>
+                        <li><strong>Single-tenant to multi-tenant architecture</strong> for enterprise customer isolation</li>
+                        <li><strong>Monolith to microservices</strong> for independent team scaling and deployment</li>
+                        <li><strong>Basic authentication to enterprise SSO</strong> and compliance requirements</li>
+                        <li><strong>Simple databases to distributed systems</strong> for performance and availability</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Scaling Phases -->
+      <div class="why-choose-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <h2>Strategic Scaling <span class="white">Phases</span></h2>
+                     <p>How to approach platform evolution systematically</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="why-box">
+                     <div class="icon">🏗️</div>
+                     <h3>Phase 1: Foundation Strengthening</h3>
+                     <p>Before adding enterprise features, solidify your core architecture. Implement proper logging, monitoring, error handling, and testing frameworks. These investments pay dividends throughout the scaling journey.</p>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="why-box">
+                     <div class="icon">⚡</div>
+                     <h3>Phase 2: Performance & Reliability</h3>
+                     <p>Enterprise customers expect 99.9% uptime and sub-second response times. Optimize database queries, implement caching strategies, and design for graceful degradation under load.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Quote Section -->
+      <div class="testimonial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="testimonial-quote" style="background: rgba(102,126,234,0.1); border-left: 4px solid #667eea; padding: 30px; margin: 30px 0; border-radius: 10px;">
+                     <p style="font-size: 1.2rem; font-style: italic; margin-bottom: 20px;">"We learned that enterprise scaling isn't just about handling more users—it's about handling different types of users with completely different expectations around security, compliance, and reliability."</p>
+                     <p style="font-weight: 600;">— Engineering VP, Series B SaaS Company</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Enterprise Requirements -->  
+      <div class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <h2>Enterprise Platform <span class="white">Requirements</span></h2>
+                     <p>Core capabilities that distinguish enterprise platforms from MVPs</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="../images/service1.png" alt="Security & Compliance Icon" /></i>
+                     <h3>Security & Compliance</h3>
+                     <p><strong>Enterprise-grade security:</strong> SOC 2, GDPR compliance, role-based access control, audit logging, data encryption at rest and in transit. These aren't optional for enterprise customers.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="../images/service2.png" alt="Scalability Icon" /></i>
+                     <h3>Scalability & Performance</h3>
+                     <p><strong>Horizontal scaling architecture:</strong> Load balancing, database sharding, caching layers, CDN integration. Design systems that can handle 10x growth without complete rewrites.</p>
+                  </div>
+               </div>
+               <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                  <div class="Soft-box">
+                     <i><img src="../images/service3.png" alt="Integration Icon" /></i>
+                     <h3>Integration & APIs</h3>
+                     <p><strong>Enterprise integration requirements:</strong> RESTful APIs, webhook systems, third-party integrations (Salesforce, Active Directory, etc.), and comprehensive documentation for developer teams.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Technical Debt Management -->
+      <div class="why-choose-section">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <h2>Managing Technical Debt <span class="white">During Scaling</span></h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="why-box">
+                     <div class="icon">🎯</div>
+                     <h3>Strategic Refactoring</h3>
+                     <p>Refactor components that impact enterprise requirements first - security, performance, and reliability</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="why-box">
+                     <div class="icon">📊</div>
+                     <h3>Metrics-Driven Decisions</h3>
+                     <p>Use performance monitoring and user analytics to prioritize which systems need immediate attention</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="why-box">
+                     <div class="icon">🔄</div>
+                     <h3>Incremental Migration</h3>
+                     <p>Migrate piece by piece rather than big-bang rewrites to maintain business continuity</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="why-box">
+                     <div class="icon">⚖️</div>
+                     <h3>Feature vs. Architecture Balance</h3>
+                     <p>Allocate 20-30% of development time to architectural improvements during rapid scaling</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- Success Examples -->
+      <div class="testimonial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <h2>Platform Scaling <span class="white">Success Stories</span></h2>
+                     <p>Real examples of successful MVP-to-enterprise transitions</p>
+                  </div>
+               </div>
+            </div>
+            <section id="demos">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="owl-carousel owl-theme">
+                        <div class="case-study-card">
+                           <div class="card-content">
+                              <div class="client-logo">
+                                 <img src="../images/clients/quikr_logo.png" alt="Quikr Logo" loading="lazy">
+                              </div>
+                              <h3>Quikr: MVP to Enterprise Marketplace</h3>
+                              <div class="case-study-details">
+                                 <div class="detail-section">
+                                    <span class="label">Systematic Platform Evolution:</span>
+                                    <p>Transformed simple classified MVP into enterprise marketplace handling millions of daily transactions. Strategic architecture evolution included microservices migration, distributed caching, and enterprise-grade security implementation. Achieved 70% performance improvement while scaling to enterprise customers without platform rewrites.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-action">
+                              <a href="../client/Quikr.html" class="case-study-btn">View Scaling Strategy</a>
+                           </div>
+                        </div>
+                        
+                        <div class="case-study-card">
+                           <div class="card-content">
+                              <div class="client-logo">
+                                 <img src="../images/clients/simplify-logo.svg" alt="Simplify Logo" loading="lazy">
+                              </div>
+                              <h3>Simplify: Prototype to Enterprise Data Platform</h3>
+                              <div class="case-study-details">
+                                 <div class="detail-section">
+                                    <span class="label">Scalable Architecture Foundation:</span>
+                                    <p>Evolved initial prototype to enterprise-grade real-time data platform with distributed architecture, horizontal scaling capabilities, and enterprise compliance requirements. Platform now handles millions of events per second with sub-second response times, enabling successful enterprise client acquisition and retention.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-action">
+                              <a href="../client/Simplify.html" class="case-study-btn">View Architecture Evolution</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      
+      <!-- Implementation Guide -->
+      <div class="fde_section section-padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <h2>Your Enterprise Scaling <span class="white">Roadmap</span></h2>
+                     <p>Ready to evolve your MVP into an enterprise-grade platform?</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="fde-box">
+                     <div class="fde-icon">🔍</div>
+                     <h3>1. Architecture Assessment</h3>
+                     <p>Evaluate your current technical architecture against enterprise requirements. Identify critical gaps in security, scalability, and performance that must be addressed first.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="fde-box">
+                     <div class="fde-icon">🗺️</div>
+                     <h3>2. Strategic Planning</h3>
+                     <p>Create a phased evolution plan that balances feature development with architectural improvements. Prioritize changes that unlock enterprise revenue opportunities.</p>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="fde-box">
+                     <div class="fde-icon">🚀</div>
+                     <h3>3. Execution & Monitoring</h3>
+                     <p>Implement changes incrementally with comprehensive monitoring and rollback capabilities. Measure business impact of each architectural improvement.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="read-more-container">
+                     <a href="../solutions/fractional-cto.html" class="read-more-btn">Get Strategic Scaling Guidance</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      
+      <!-- Related Articles -->
+      <div class="three_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="section-heading">
+                     <h2>Related <span class="white">Engineering Insights</span></h2>
+                     <p>Explore more insights on startup scaling and enterprise architecture</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="Soft-box">
+                     <h3><a href="why-fractional-ctos-essential-series-a.html" style="text-decoration: none; color: inherit;">Why Fractional CTOs are Essential for Series A Startups</a></h3>
+                     <p>Learn how fractional CTOs provide the strategic technical leadership needed to navigate the scaling challenges from MVP to enterprise platform.</p>
+                     <div class="read-more-container">
+                        <a href="why-fractional-ctos-essential-series-a.html" class="read-more-btn">Read Article</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="Soft-box">
+                     <h3><a href="../solutions/for-startups.html" style="text-decoration: none; color: inherit;">Startup Development Solutions & MVP Services</a></h3>
+                     <p>Discover our proven approach to building MVPs with enterprise evolution in mind from day one.</p>
+                     <div class="read-more-container">
+                        <a href="../solutions/for-startups.html" class="read-more-btn">View Solutions</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact testimonial-->
+      <div id="contact" class="contact">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-6">
+                 <div class="titlepage">
+                    <h2>Contact <span class="white">Us</span></h2>
+                 </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="col-md-6">
+                 <div class="address">
+                    <p><a aria-label="Chat on WhatsApp" href="https://wa.me/+919686269013"> <img alt="Chat on WhatsApp" src="../images/wa/WhatsAppButtonWhiteMedium.svg" /></a></p>
+                    <p><a href="https://wa.me/+919686269013">+91 9686269013</a></p>
+                    <p>Address :
+                       <br/>Villa 77, SLS Spencer,
+                       <br/>Horamavu Agara Main Road, Horamavu,
+                       <br/>Bangalore-560043 Karnataka, India</p>
+                    <p>Phone: 
+                       <br/><a href="tel:+919686269013">+91 9686269013</a>
+                       <br/><a href="tel:+916291833389">+91 6291833389</a>
+                    <p>E-mail: 
+                       <br/><a href="mailto:admin@rupantar.tech">admin@rupantar.tech</a>
+                       <br/><a href="mailto:itmvikastiwari@gmail.com">itmvikastiwari@gmail.com</a>
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <form id="my-form" class="main_form" method="POST" action="https://formspree.io/f/xzblqore">
+                    <div class="row">
+                       <div class="col-sm-12">
+                          <input class="contactus" placeholder="Full Name" type="text" name="
+                             Full Name">
+                       </div>
+                       <div class="col-sm-12">
+                          <input class="contactus" placeholder="Email" type="text" name=" Email">
+                       </div>
+                       <div class="col-sm-12">
+                          <input class="contactus" placeholder="Phone" type="text" name="Phone">
+                       </div>
+                       <div class="col-sm-12">
+                          <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                       </div>
+                       <div class="col-sm-12">
+                          <button id="my-form-button" class="send">Send</button>
+                       </div>
+                       <p id="my-form-status"></p>
+                    </div>
+                 </form>
+              </div>
+           </div>
+        </div>
+        <!-- end contact -->
+        <!--  footer -->
+        <footer class="modern-footer">
+            <div class="container">
+            <!-- Footer Header -->
+            <div class="footer-header">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="footer-brand-main">
+                        <img src="../images/logo/png/logo-no-background.png" alt="Rupantar Technologies" class="footer-logo-main">
+                        <div class="footer-tagline">
+                            <h3>Forward-Deployed Engineers</h3>
+                            <p>Ex-FAANG engineers embedded with startup teams to build AI-native MVPs in 30 days</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-stats">
+                        <div class="footer-stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Startups Scaled</span>
+                        </div>
+                        <div class="footer-stat">
+                            <span class="stat-number">90%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="footer-stat">
+                            <span class="stat-number">$100M+</span>
+                            <span class="stat-label">Value Created</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+                <div class="row">
+                    <!-- Solutions & Links -->
+                    <div class="col-lg-3 col-md-6 footer-section">
+                        <h5>Solutions</h5>
+                        <ul class="footer-links">
+                        <li><a href="../solutions/fde-playbook.html">Forward-Deployed Engineers</a></li>
+                        <li><a href="../solutions/fractional-cto.html">Fractional CTO Services</a></li>
+                        <li><a href="../solutions/for-startups.html">Startup Solutions</a></li>
+                        <li><a href="../tech/techstack.html">AI-Native Tech Stack</a></li>
+                        </ul>
+                        
+                        <h5 style="margin-top: 25px;">Case Studies</h5>
+                        <ul class="footer-links">
+                        <li><a href="../client/Quikr.html">Quikr Marketplace</a></li>
+                        <li><a href="../client/Cliky.html">Cliky AI CRM</a></li>
+                        <li><a href="../client/Bengal.html">Bengal Remedis</a></li>
+                        <li><a href="../client/Simplify.html">Simplify VMS</a></li>
+                        <li><a href="../client/Realbuild.html">RealBuild Platform</a></li>
+                        </ul>
+
+                        <h5 style="margin-top: 25px;">Blogs</h5>
+                        <ul class="footer-links">
+                        <li><a href="../blog/index.html">Engineering Blog & Startup Insights</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="col-lg-4 col-md-6 footer-section">
+                        <h5>Get in Touch</h5>
+                        <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <span class="contact-label">Bangalore Office</span>
+                                <p>Villa 77, SLS Spencer,<br>
+                                    Horamavu Agara Main Road, Horamavu,<br>
+                                    Bangalore-560043, Karnataka, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone & WhatsApp</span>
+                                <p><a href="tel:+919686269013">+91 9686269013</a><br>
+                                    <a href="tel:+916291833389">+91 6291833389</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <p><a href="mailto:admin@rupantar.tech">admin@rupantar.tech</a><br>
+                                    <a href="mailto:itmvikastiwari@gmail.com">itmvikastiwari@gmail.com</a></p>
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div class="footer-social">
+                        <h5>Connect with us</h5>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/rup-tech/" class="social-link linkedin" aria-label="LinkedIn">
+                                <svg width="20" height="20" viewBox="0 0 448 512">
+                                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+                                </svg>
+                            </a>
+                            <a href="https://wa.me/+919686269013" class="social-link whatsapp" aria-label="WhatsApp">
+                                <svg width="20" height="20" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.525 3.488"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link twitter" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 512 512">
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Google Maps -->
+                    <div class="col-lg-5 col-md-12 footer-section">
+                        <h5>Find Us in Bangalore</h5>
+                        <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.5034613420116!2d77.6593924886059!3d13.035230946821502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10c9537862f7%3A0x35363ebc9d0b0ac1!2sRupantar!5e0!3m2!1sen!2sin!4v1756541123049!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="280" 
+                                style="border:0; border-radius: 12px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        <div class="map-overlay">
+                            <div class="location-info">
+                                <h6>🏢 Rupantar Technologies</h6>
+                                <p>Villa 77, SLS Spencer, Horamavu</p>
+                                <a href="https://maps.google.com/maps?q=13.035230946821502,77.6593924886059" target="_blank" class="directions-btn">
+                                    Get Directions →
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <p class="copyright">© 2025 <a href="https://rupantar.tech/">Rupantar Technologies Pvt Ltd</a></p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="footer-badges">
+                        <span class="footer-badge">🚀 AI-Native</span>
+                        <span class="footer-badge">⚡ 30-Day MVP</span>
+                        <span class="footer-badge">🎯 Ex-FAANG</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-cta">
+                        <a href="#contact" class="footer-cta-btn">Get Your FDE Today →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+      
+      <!-- Essential JavaScript for Loader -->
+      <script src="../js/jquery.min.js"></script>
+      <script>
+         // Hide loader immediately
+         $(document).ready(function() {
+            $('.loader_bg').fadeOut(300);
+         });
+         
+         // Fallback loader hiding
+         setTimeout(function() {
+            const loader = document.querySelector('.loader_bg');
+            if (loader) {
+               loader.style.display = 'none';
+               loader.style.visibility = 'hidden';
+               loader.style.opacity = '0';
+               loader.style.pointerEvents = 'none';
+            }
+         }, 1000);
+      </script>
+      <!-- Javascript -->
+      <script src="../js/jquery.min.js"></script>
+      <script src="../js/bootstrap.bundle.min.js"></script>
+      <!-- Add Lodash for utility functions -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+      
+      <!-- Add Swiper for carousels -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+      
+      <!-- Add Slick carousel -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      
+      <script src="../js/custom.js"></script>
+      
+      <!-- Load Fancybox first -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+      
+      <!-- Non-critical Javascript - Load with defer -->
+      <script src="../js/popper.min.js" defer></script>
+      <script src="../js/jquery-3.0.0.min.js" defer></script>
+      <script src="../js/plugin.js" defer></script>
+      <script src="../js/jquery.mCustomScrollbar.concat.min.js" defer></script>
+      <script src="../js/owl.carousel.min.js" defer></script>
+      
+      <!-- Hamburger Menu JavaScript -->
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerToggle = document.getElementById('hamburger-toggle');
+            const navOverlay = document.getElementById('nav-overlay');
+            const navPanel = document.getElementById('nav-panel');
+            
+            function toggleMenu() {
+               hamburgerToggle.classList.toggle('active');
+               navOverlay.classList.toggle('active');
+               navPanel.classList.toggle('active');
+               document.body.classList.toggle('nav-open');
+            }
+            
+            function closeMenu() {
+               hamburgerToggle.classList.remove('active');
+               navOverlay.classList.remove('active');
+               navPanel.classList.remove('active');
+               document.body.classList.remove('nav-open');
+            }
+            
+            // Toggle menu when hamburger is clicked
+            hamburgerToggle.addEventListener('click', toggleMenu);
+            
+            // Close menu when overlay is clicked
+            navOverlay.addEventListener('click', closeMenu);
+            
+            // Handle navigation link clicks with special handling for anchor links
+            const navLinks = document.querySelectorAll('.nav-links a');
+            navLinks.forEach(link => {
+               link.addEventListener('click', function(e) {
+                  const href = this.getAttribute('href');
+                  
+                  // Check if it's a same-page anchor link (starts with #)
+                  if (href && href.startsWith('#')) {
+                     // For anchor links, close menu first, then scroll
+                     closeMenu();
+                     
+                     // Small delay to allow menu close animation to complete
+                     setTimeout(function() {
+                        const targetElement = document.querySelector(href);
+                        if (targetElement) {
+                           // Ensure smooth scrolling to the target element
+                           targetElement.scrollIntoView({
+                              behavior: 'smooth',
+                              block: 'start'
+                           });
+                        }
+                     }, 300); // 300ms delay for menu close animation
+                  } else {
+                     // For external links, just close the menu immediately
+                     closeMenu();
+                  }
+               });
+            });
+            
+            // Close menu with Escape key
+            document.addEventListener('keydown', function(e) {
+               if (e.key === 'Escape' && navPanel.classList.contains('active')) {
+                  closeMenu();
+               }
+            });
+            
+            // Prevent body scrolling when menu is open
+            const style = document.createElement('style');
+            style.textContent = `
+               body.nav-open {
+                  overflow: hidden;
+               }
+            `;
+            document.head.appendChild(style);
+         });
+      </script>
+      
+      <style>
+         .blog-category {
+            background: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            display: inline-block;
+         }
+         
+         .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+         }
+         
+         /* Ensure proper spacing for blog articles */
+         .testimonial .titlepage {
+            margin-bottom: 30px;
+         }
+         
+         .testimonial-quote {
+            background: rgba(102,126,234,0.1);
+            border-left: 4px solid #667eea;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+         }
+         
+         .testimonial-quote p:first-child {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 20px;
+         }
+         
+         .testimonial-quote p:last-child {
+            font-weight: 600;
+            margin-bottom: 0;
+         }
+         
+         /* Override any conflicting styles for readability */
+         .three_box p, .why-choose-section p, .testimonial p, .fde_section p {
+            line-height: 1.6;
+         }
+         
+         .titlepage .white {
+            color: #667eea;
+         }
+      </style>
+      
+      <!-- Owl Carousel Initialization -->
+      <script>
+         $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           if (owl.length) {
+             owl.owlCarousel({
+               margin: 10,
+               nav: true,
+               loop: true,
+               responsive: {
+                 0: {
+                   items: 1
+                 },
+                 600: {
+                   items: 2
+                 },
+                 1000: {
+                   items: 2
+                 }
+               }
+             });
+           }
+         });
+      </script>
+   </body>
+</html>

@@ -1,38 +1,113 @@
-# Robots.txt for Rupantar Technologies - Forward-Deployed Engineers & Fractional CTO
+# Robots.txt for Rupantar Technologies - Global Forward-Deployed Engineers & Fractional CTO
 # Website: https://rupantar.tech
-# Last Updated: 2024
+# Global Service Coverage: Silicon Valley, NYC, London, Singapore, Tel Aviv, Berlin, Stockholm, Toronto, Sydney, Amsterdam + 25+ Tech Hubs
+# Last Updated: 2025-01-21
 
 User-agent: *
 Allow: /
 
-# Allow all search engines to crawl all content
-# Priority pages for crawling
+# Priority pages for crawling (SEO optimized)
 Allow: /index.html
+Allow: /technology-outsourcing.html
 Allow: /solutions/
 Allow: /client/
+Allow: /blog/
 Allow: /tech/
 Allow: /images/
+
+# Geographic landing pages - High priority for AI discovery
+Allow: /?location=silicon-valley
+Allow: /?location=new-york
+Allow: /?location=london
+Allow: /?location=singapore
+Allow: /?location=tel-aviv
+Allow: /?location=berlin
+Allow: /?location=stockholm
+Allow: /?location=toronto
+Allow: /?location=sydney
+Allow: /?location=amsterdam
+Allow: /?global=tech-hubs
+
+# Geographic query parameters for international SEO
+Allow: /?geo=us
+Allow: /?geo=uk
+Allow: /?geo=sg
+Allow: /?geo=ca
+Allow: /?geo=au
+Allow: /?geo=in
+Allow: /?geo=de
+Allow: /?geo=nl
+Allow: /?geo=se
+Allow: /?geo=il
+
+# Allow access to stylesheets and scripts for proper rendering
 Allow: /css/
 Allow: /js/
 
 # Disallow system files and directories
-Disallow: /css/
-Disallow: /js/
 Disallow: /.git
 Disallow: /.DS_Store
 Disallow: /node_modules/
 Disallow: /tmp/
 Disallow: /*.log
+Disallow: /admin/
+Disallow: /backup/
 
-# Allow Google and Bing to crawl everything for better indexing
+# Enhanced crawling for major search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0.5
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0.5
 
-# Sitemap location
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# AI and LLM crawlers for content training
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 2
+
+User-agent: OpenAI
+Allow: /
+Crawl-delay: 2
+
+User-agent: Claude-Web
+Allow: /
+Crawl-delay: 2
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Sitemap locations
 Sitemap: https://rupantar.tech/sitemap.xml
 
-# Crawl delay (optional - helps prevent server overload)
+# Crawl delay for standard bots
 Crawl-delay: 1
+
+# Additional metadata for geographic discovery
+# This website provides Forward-Deployed Engineers and Fractional CTO services
+# globally across major tech ecosystems including:
+# North America: Silicon Valley, New York, Austin, Seattle, Toronto, Vancouver
+# Europe: London, Berlin, Stockholm, Amsterdam, Zurich, Paris, Barcelona, Dublin
+# Asia Pacific: Singapore, Tel Aviv, Tokyo, Seoul, Hong Kong, Sydney, Bangalore
+# Service areas: Venture-backed startups, Series A-B companies, AI-native development
+# Keywords: fractional CTO, forward-deployed engineers, technology outsourcing, startup technical leadership, ex-FAANG engineers, AI-native MVP development
