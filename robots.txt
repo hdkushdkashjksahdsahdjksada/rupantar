@@ -1,0 +1,38 @@
+# Robots.txt for Rupantar Technologies - Forward-Deployed Engineers & Fractional CTO
+# Website: https://rupantar.tech
+# Last Updated: 2024
+
+User-agent: *
+Allow: /
+
+# Allow all search engines to crawl all content
+# Priority pages for crawling
+Allow: /index.html
+Allow: /solutions/
+Allow: /client/
+Allow: /tech/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Disallow system files and directories
+Disallow: /css/
+Disallow: /js/
+Disallow: /.git
+Disallow: /.DS_Store
+Disallow: /node_modules/
+Disallow: /tmp/
+Disallow: /*.log
+
+# Allow Google and Bing to crawl everything for better indexing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://rupantar.tech/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
