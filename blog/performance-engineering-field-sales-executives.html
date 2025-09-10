@@ -6,7 +6,6 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- Google Search console -->
       <meta name="google-site-verification" content="QSgln_VzPj3s2Onxy67Heujw8siK5VW_UJ4tMhIm6Os" />
       <!-- site metas -->
@@ -50,6 +49,32 @@
       
       <!-- Mobile Responsive Improvements -->
       <style>
+         /* Accessibility Styles */
+         .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+         }
+
+         .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            min-height: 1rem;
+         }
+
+         .contactus:focus,
+         .textarea:focus {
+            outline: 2px solid #ffc107;
+            outline-offset: 2px;
+         }
+
          @media (max-width: 768px) {
             h1 { font-size: 2.5rem !important; }
             h2 { font-size: 2rem !important; }
@@ -71,7 +96,7 @@
    {
      "@context": "https://schema.org",
      "@type": "BlogPosting",
-     "headline": "Performance Engineering for B2B Field Sales: AI-Driven Transformation",
+     "headline": "Performance Engineering for Field Sales Executives: An AI-Driven Transformation",
      "description": "How Forward-Deployed Engineers and Fractional CTOs revolutionize B2B field sales performance through AI-driven applications, personalized workflows, and comprehensive performance engineering.",
      "author": {
        "@type": "Organization",
@@ -214,7 +239,7 @@
       
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="../images/loading.gif" alt="#" /></div>
+         <div class="loader"><img src="../images/loading.gif" alt="Loading animation" /></div>
       </div>
       <!-- end loader -->
       <!-- header -->
@@ -245,32 +270,33 @@
       </header>
       <!-- end header -->
       
-      <!-- Blog Article Header -->
-      <div class="banner_main-blog">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage text_align_center">
-                     <div class="article-meta" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; color:#666">
-                        <span class="badge badge-primary">January 27, 2025</span>
-                        <span class="badge badge-secondary">Performance Engineering</span>
-                        <span class="badge badge-info">15 min read</span>
-                     </div>
-                     <h1 style="color: #000; font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 30px;">Performance Engineering for B2B Field Sales: AI-Driven Transformation</h1>
-                     <p style="color: #666; font-size: 1.3rem; line-height: 1.6; margin-bottom: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">How Forward-Deployed Engineers and Fractional CTOs revolutionize field sales performance through empathy-driven design, AI workflows, and comprehensive performance engineering</p>
-                     
-                     <div class="author-info" style="text-align: center; margin-bottom: 40px;">
-                        <h6 style="color: #ffc107; font-weight: 600; margin-bottom: 10px;">By the Rupantar Engineering Team</h6>
-                        <p style="color: #666; font-size: 1rem;">Forward-Deployed Engineers specializing in B2B sales force optimization and performance engineering</p>
+      <main>
+         <!-- Blog Article Header -->
+         <div class="banner_main-blog">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage text_align_center">
+                        <div class="article-meta" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; color:#666">
+                           <span class="badge badge-primary">January 27, 2025</span>
+                           <span class="badge badge-secondary">Performance Engineering</span>
+                           <span class="badge badge-info">15 min read</span>
+                        </div>
+                        <h1 style="color: #000; font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 30px;">Performance Engineering for B2B Field Sales: AI-Driven Transformation</h1>
+                        <p style="color: #666; font-size: 1.3rem; line-height: 1.6; margin-bottom: 40px; max-width: 900px; margin-left: auto; margin-right: auto;">How Forward-Deployed Engineers and Fractional CTOs revolutionize field sales performance through empathy-driven design, AI workflows, and comprehensive performance engineering</p>
+
+                        <div class="author-info" style="text-align: center; margin-bottom: 40px;">
+                           <h6 style="color: #ffc107; font-weight: 600; margin-bottom: 10px;">By the Rupantar Engineering Team</h6>
+                           <p style="color: #666; font-size: 1rem;">Forward-Deployed Engineers specializing in B2B sales force optimization and performance engineering</p>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div>
-      
-      <!-- Blog Article Content -->
-      <div class="blog-article" style="background: #ffffff; padding: 10px 0;">
+
+         <!-- Blog Article Content -->
+         <div class="blog-article" style="background: #ffffff; padding: 10px 0;">
          <div class="container">
             <!-- Featured Image -->
             <div class="row">
@@ -285,220 +311,198 @@
                      
                      <div style="margin-bottom: 50px;">
                         <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">🎯 The Field Sales Performance Challenge</h2>
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: #333;">In the complex world of B2B sales, field sales executives are the linchpin of revenue generation. Yet, across industries—from pharmaceuticals to FMCG, from consumer electronics to industrial equipment—we've observed a consistent pattern: <strong>field sales teams are drowning in operational complexity instead of focusing on what they do best: selling and building customer relationships.</strong></p>
-                        
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">Over the past three years, our Forward-Deployed Engineers and Fractional CTO services have been embedded with numerous B2B companies, going deep into the trenches with field sales teams. What we discovered was a systemic problem that required not just technological solutions, but a fundamental rethinking of how field sales operations are engineered for performance.</p>
-
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px; color: #333;">In B2B sales, field executives are the core drivers of revenue. Yet, across industries—whether it's pharmaceuticals, FMCG, consumer electronics, or industrial equipment—we have noticed a strikingly consistent problem: field sales teams are buried under layers of operational complexity instead of doing what they excel at—selling and building trust.</p>
                         <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 5px solid #ffc107; margin: 30px 0;">
                            <h4 style="color: #1e3c72; margin-bottom: 15px;">💡 Key Insight</h4>
-                           <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 0; color: #333;">Field sales executives spend only 35% of their time actually selling. The remaining 65% is consumed by administrative tasks, data entry, compliance reporting, and navigating fragmented systems—none of which directly contribute to revenue generation or customer satisfaction.</p>
+                           <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 0; color: #333;">Field sales executives spend <strong>only 35% of their time on selling activities</strong>. The remaining 65% is absorbed by administrative tasks, data entry, compliance reporting, and navigating fragmented systems—all of which add little to revenue growth or customer satisfaction.</p>
                         </div>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">This inefficiency doesn't just hurt executives — it ripples across headquarters, retailers, and customers, eroding revenue and morale alike.</p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">Over the past three years, we have worked closely with dozens of B2B companies, embedding ourselves within field sales teams and observing their daily workflows. We realised that this is a systemic issue, not just a series of isolated inefficiencies. Solving it required more than patchwork technology; it demanded a fundamental rethinking of how field sales operations are designed, supported, and optimised for performance.</p>
                      </div>
 
                      <div style="margin-bottom: 50px;">
-                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">🔍 Deep Stakeholder Analysis: The Empathy-Driven Approach</h2>
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">Our methodology begins with what we call <strong>"Tri-Stakeholder Empathy Mapping"</strong>—understanding pain points from three critical perspectives:</p>
+                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">🔍 Seeing the Problem Through Three Lenses</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">To solve the issue meaningfully, we looked beyond just the sales team and walked in the shoes of everyone involved. Through the <strong>Stakeholder Empathy Map</strong>, we uncovered pain points from the perspective of every key player in the field sales ecosystem.</p>
 
                         <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">1. National Headquarters (NHQ) Stakeholders</h3>
-                        <ul style="list-style: none; padding-left: 0;">
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Sales Directors:</strong> Struggling with visibility into field performance, unable to identify coaching opportunities in real-time</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Operations Teams:</strong> Manually consolidating reports from multiple systems, leading to delayed insights and reactive decision-making</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Finance Teams:</strong> Difficulty in tracking expense validation, territory profitability, and ROI on field investments</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>HR/Training Teams:</strong> No data-driven insights into skill gaps or training effectiveness across field teams</li>
+                        <ul style="list-style: none !important; list-style-type: none !important; padding-left: 0;">
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Sales Directors:</strong> Struggle with limited visibility into field performance, making it hard to spot coaching opportunities in real time.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Operations Teams:</strong> Spend countless hours manually consolidating reports from disconnected systems, which delays insights and forces reactive decision-making.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Finance Teams:</strong> Face challenges in validating expenses, tracking territory profitability, and measuring ROI on field investments.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>HR & Training Teams:</strong> Lack data-driven visibility into skill gaps or training effectiveness across sales teams.</li>
                         </ul>
 
                         <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">2. Field Sales Executives</h3>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>System Fragmentation:</strong> Using 5-8 different apps for attendance, beat planning, order taking, expense reporting, and communication</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Data Re-entry:</strong> Manually entering the same customer information across multiple systems</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Limited Customer Intelligence:</strong> No comprehensive view of retailer history, preferences, or potential</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Reactive Support:</strong> When issues arise, no centralized help system or intelligent assistance</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Performance Anxiety:</strong> Unclear expectations, inconsistent feedback, and gamification that feels punitive rather than motivational</li>
+                        <ul style="list-style: none !important; list-style-type: none !important; padding-left: 0;">
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>System Fragmentation:</strong> Juggle 5-8 different apps for attendance, beat planning, order capture, expense reporting, and communication.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Data Re-entry:</strong> Repeatedly enter the same customer details across multiple systems.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Limited Customer Intelligence:</strong> Operate without a unified view of retailer history, preferences, or potential opportunities.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Reactive Support:</strong> When issues arise, there's no centralised help desk or intelligent assistance available.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Performance Anxiety:</strong> Expectations are unclear, feedback inconsistent, and gamification often feels punitive rather than motivational.</li>
                         </ul>
 
                         <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">3. Retailers/Channel Partners</h3>
-                        <ul style="list-style: none; padding-left: 0;">
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Inconsistent Service:</strong> Different field executives provide varying levels of service quality and product knowledge</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Order Processing Delays:</strong> Manual order processes leading to inventory stockouts and lost sales</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Limited Business Insights:</strong> No access to data that could help them optimize their own operations</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Communication Gaps:</strong> Difficulty reaching the right person for support, complaints, or opportunities</li>
+                        <ul style="list-style: none !important; list-style-type: none !important; padding-left: 0;">
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Inconsistent Service:</strong> Experience varying levels of service quality and product knowledge depending on the field executive they interact with.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Order Processing Delays:</strong> Manual processes lead to stockouts, slower replenishment, and lost sales.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Limited Business Insights:</strong> Lack access to data that could help them optimize their own inventory and operations.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Communication Gaps:</strong> Struggle to reach the right person for support, complaints, or new opportunities.</li>
                         </ul>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">This <strong>triangle of inefficiency</strong> meant frustration everywhere: HQ lacked clarity, executives felt demotivated, and retailers remained underserved. Each pain point amplifies the others, creating a cycle of inefficiency that drags down performance across the board. </p>
                      </div>
 
                      <div style="margin-bottom: 50px;">
-                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">🎯 North Star Definition & Ruthless Prioritization</h2>
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">Through our stakeholder analysis, we identified a clear North Star:</p>
-
-                        <div style="background: #f8f9fa; padding: 30px; border-radius: 12px; border-left: 5px solid #ffc107; margin: 30px 0;">
-                           <h4 style="color: #1e3c72; margin-bottom: 15px;">🌟 North Star Vision</h4>
-                           <p style="font-size: 1rem; line-height: 1.6; margin-bottom: 0; color: #333;"><strong>"Enable field sales executives to spend 80% of their time on high-value activities—selling, relationship building, and customer success—while AI and automation handle operational complexity seamlessly in the background."</strong></p>
+                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">🎯 Our Approach: Engineering Field Sales for Performance</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">We decided to redesign field sales operations around the three stakeholders we just mapped—HQ, field executives, and retailers—so that every process, workflow, and technology investment creates value across the chain. For this, we focussed on the three pillars:</p>
+                        <ul style="list-style: none !important; list-style-type: none !important; padding-left: 0;">
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Unified Systems:</strong> Eliminating fragmentation by consolidating workflows into a single, intuitive platform.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Data-Driven Insights:</strong> Turning raw activity into actionable intelligence for coaching, decision-making, and customer engagement.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Empowered Execution:</strong> Giving field executives the clarity, support, and motivation they need to focus on what they do best—selling and building relationships.</li>
+                        </ul>
+                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">The North Star: 80% Time on Selling</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">We also needed to know whether our changes are driving the right outcomes. That is where our north star metrics came in. We set out with a single guiding principle: empower field executives to spend 80% of their time selling, influencing, and nurturing relationships. Everything else — the admin, the coordination, the analysis — should be handled by AI and automation in the background.</p>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">With this North Star, we designed a performance engineering approach that unifies systems, simplifies workflows, and makes data actionable in real time.</p>
+                        <div class="row">
+                           <div class="col-md-12 text-center">
+                              <img src="../images/product/northstar.png" alt="North Star Metrics" class="img-fluid" style="padding-bottom: 10px;">
+                           </div>
                         </div>
 
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">This led to our ruthless prioritization framework, focusing on features that deliver maximum impact on core KPIs:</p>
-
-                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">Primary KPIs (60% weight)</h3>
+                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">Defining What Success Looks Like</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">To stay aligned, we built a KPI weighting framework:</p>
                         <ul style="list-style: none; padding-left: 0;">
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Revenue per territory:</strong> Direct impact on business growth</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Width of distribution:</strong> Number of active retailers/outlets served</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Items sold per visit:</strong> Efficiency of each customer interaction</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Primary KPIs (60%):</strong> Revenue per territory, width of distribution (number of active retailers/outlets served), items sold per visit.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Secondary KPIs (30%):</strong> Repeat sales rate, counter share, Net Promoter Score (NPS).</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Operational KPIs (10%):</strong> Customer satisfaction (CSAT), system adoption rate, time spent on administrative tasks.</li>
                         </ul>
-
-                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">Secondary KPIs (30% weight)</h3>
-                        <ul style="list-style: none; padding-left: 0; margin-bottom: 30px;">
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Repeat sales rate:</strong> Customer satisfaction and retention</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Counter share:</strong> Competitive positioning</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>NPS (Net Promoter Score):</strong> Retailer satisfaction</li>
-                        </ul>
-
-                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">Operational KPIs (10% weight)</h3>
-                        <ul style="list-style: none; padding-left: 0;">
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>CSAT (Customer Satisfaction):</strong> Internal stakeholder satisfaction</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>System adoption rate:</strong> Technology utilization</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Time spent on administrative tasks:</strong> Operational efficiency</li>
-                        </ul>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">This weighting ensured that every technical decision directly linked back to business impact.</p>
                      </div>
 
                      <div style="margin-bottom: 50px;">
-                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">🏗️ The Unified Field Sales Application: Technical Deep Dive</h2>
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">Our solution is a single, comprehensive application that consolidates all field sales operations while leveraging AI for personalized performance engineering. Here's the technical architecture:</p>
+                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">🏗️ The Unified Field Sales Application</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">We developed a single, integrated platform that consolidates all field sales operations. By eliminating system fragmentation and layering AI across every workflow, it transforms the way sales executives, HQ leaders, and retailers collaborate. The architecture is built on two core layers:</p>
+                        <ul style="list-style: none; padding-left: 0;">
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Operational Excellence Layer -</strong> streamlining field execution and back-office processes.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Customer Intelligence Layer -</strong> delivering deep, real-time insights through Retailer 360.</li>
+                        </ul>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">Together, these layers ensure that every stakeholder benefits from seamless operations and actionable intelligence.</p>
 
-                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">Core Platform Features</h3>
-
+                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">1. Operational Excellence Layer</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">This layer simplifies day-to-day field sales activities while embedding AI to guide smarter execution.</p>
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 30px 0;">
                            <div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e9ecef; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">📍 Smart Attendance & Geofencing</h4>
-                              <p style="color: #333; line-height: 1.6;">AI-powered location intelligence with predictive routing, automatic check-ins, and anomaly detection for territory compliance.</p>
+                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">🗺️ Smart Attendance & Geofencing</h4>
+                              <p style="color: #333; line-height: 1.6;">Predictive routing, automatic check-ins, and anomaly detection ensure compliance without friction.</p>
                            </div>
-
                            <div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e9ecef; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">💰 Intelligent Conveyance Management</h4>
-                              <p style="color: #333; line-height: 1.6;">Automated expense calculation with route optimization, fuel efficiency tracking, and policy compliance validation.</p>
+                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">🚗 Intelligent Conveyance Management</h4>
+                              <p style="color: #333; line-height: 1.6;">Automates expense calculation with optimized routes, fuel tracking, and built-in policy validation.</p>
                            </div>
-
                            <div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e9ecef; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">📋 Dynamic Task Assignment & Execution</h4>
-                              <p style="color: #333; line-height: 1.6;">AI-driven task prioritization based on territory characteristics, retailer behavior patterns, and business objectives.</p>
+                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">📋 Dynamic Task Assignment</h4>
+                              <p style="color: #333; line-height: 1.6;">AI prioritizes tasks based on territory conditions, retailer behavior, and business objectives, so sales executives focus where it matters most.</p>
                            </div>
-
                            <div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e9ecef; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">🗺️ AI-Enhanced Beat Planning</h4>
-                              <p style="color: #333; line-height: 1.6;">Machine learning algorithms optimize daily routes considering traffic patterns, retailer availability, and sales potential.</p>
+                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">🤖 AI-Enhanced Beat Planning</h4>
+                              <p style="color: #333; line-height: 1.6;">Machine learning optimizes daily travel by factoring in traffic, retailer availability, and sales potential.</p>
                            </div>
-
                            <div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e9ecef; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">🎓 Personalized Training & Self-Help</h4>
-                              <p style="color: #333; line-height: 1.6;">Adaptive learning system delivering just-in-time training based on performance gaps and upcoming customer interactions.</p>
+                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">📚 Personalized Training & Self-Help</h4>
+                              <p style="color: #333; line-height: 1.6;">Adaptive learning modules deliver just-in-time support, tailored to performance gaps and upcoming customer interactions.</p>
                            </div>
-
                            <div style="background: #ffffff; padding: 25px; border-radius: 10px; border: 1px solid #e9ecef; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">🤖 Intelligent Sales Assistant Chatbot</h4>
-                              <p style="color: #333; line-height: 1.6;">Context-aware AI assistant providing instant support for product information, pricing, policies, and troubleshooting.</p>
+                              <h4 style="color: #1e3c72; margin-bottom: 15px; font-size: 18px;">💬 Intelligent Sales Assistant Chatbot</h4>
+                              <p style="color: #333; line-height: 1.6;">A context-aware AI companion that provides instant answers on products, pricing, policies, and troubleshooting.</p>
                            </div>
                         </div>
-
-                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">Advanced Customer Intelligence: Retailer 360</h3>
-                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">The crown jewel of our platform is the <strong>Retailer 360</strong> system, providing field executives with comprehensive, real-time intelligence:</p>
-
+                        <h3 style="font-size: 1.8rem; font-weight: 600; margin: 30px 0 20px 0; color: #2a5298;">2. Customer Intelligence Layer: Retailer 360</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">At the heart of the application is <strong>Retailer 360</strong> - our advanced intelligence engine. It equips field executives with a holistic, real-time view of every retailer, transforming sales conversations from transactional to consultative. Key dimensions of Retailer 360 include:</p>
+                        
                         <ul style="list-style: none; padding-left: 0;">
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Order History Analysis:</strong> Purchase patterns, seasonal trends, and predictive recommendations</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Delivery Performance:</strong> On-time delivery rates, quality issues, and customer satisfaction scores</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Complaint Resolution:</strong> Historical issues, resolution times, and satisfaction outcomes</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Behavioral Insights:</strong> Retailer mood analysis, preferred communication styles, and engagement patterns</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Competitive Intelligence:</strong> Counter share data, competitive threats, and market positioning</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Real-time Inventory:</strong> Stock levels, demand forecasting, and replenishment recommendations</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Dynamic Pricing:</strong> Contextual pricing strategies based on retailer profile and market conditions</li>
-                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Promotional Effectiveness:</strong> Campaign performance and personalized offer recommendations</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Order History & Trends:</strong> Tracks purchasing patterns and offers predictive recommendations.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Delivery & Fulfilment:</strong> Measures on-time performance, quality issues, and satisfaction scores.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Complaint Resolution:</strong> Monitors past issues, resolution speed, and customer outcomes.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Behavioural Insights:</strong> Surfaces mood signals, engagement preferences, and communication styles.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Competitive Intelligence:</strong> Maps counter share, competitor activity, and market positioning.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Inventory Visibility:</strong> Provides real-time stock levels, demand forecasts, and replenishment alerts.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Dynamic Pricing Strategies:</strong> Suggests context-based pricing aligned to retailer profiles and market shifts.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span><strong>Promotional Effectiveness:</strong> Evaluates campaign impact and recommends personalised offers.</li>
+                        </ul>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: #333;">By uniting these two layers, the Unified Field Sales Application delivers more than efficiency. It creates a feedback loop where operations fuel intelligence, and intelligence drives smarter operations. The result:</p>
+                        <ul style="list-style: none; padding-left: 0;">
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span>HQ gains visibility and control.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span>Field executives gain clarity, support, and time to sell.</li>
+                           <li style="padding: 8px 0 8px 25px; position: relative; line-height: 1.6; color: #333;"><span style="position: absolute; left: 0; color: #ffc107; font-size: 12px;">▶</span>Retailers gain consistency, insights, and stronger relationships.</li>
                         </ul>
                      </div>
 
                      <div class="content-section">
-                        <h2>🤖 AI-Driven Personalized Performance Engineering</h2>
-                        <p>The true differentiator of our platform lies in its AI-powered personalization engine, which creates unique performance optimization workflows for each field executive:</p>
-
-                        <h3>Personalized AI Features</h3>
-
-                        <div class="ai-feature">
-                           <h4>1. Dynamic Performance Coaching</h4>
-                           <p><strong>AI Model:</strong> Ensemble of XGBoost and Neural Networks trained on sales performance data</p>
-                           <ul>
-                              <li>Real-time analysis of sales conversations using NLP sentiment analysis</li>
-                              <li>Personalized coaching tips delivered via push notifications</li>
-                              <li>Skill gap identification based on performance patterns</li>
-                              <li>Micro-learning recommendations tailored to individual learning styles</li>
-                           </ul>
-                        </div>
-
-                        <div class="ai-feature">
-                           <h4>2. Intelligent Territory Optimization</h4>
-                           <p><strong>AI Model:</strong> Graph Neural Networks with Reinforcement Learning</p>
-                           <ul>
-                              <li>Dynamic beat planning considering traffic, weather, and retailer behavior</li>
-                              <li>Optimal visit frequency recommendations based on retailer lifetime value</li>
-                              <li>Territory expansion suggestions using clustering algorithms</li>
-                              <li>Resource allocation optimization across multiple territories</li>
-                           </ul>
-                        </div>
-
-                        <div class="ai-feature">
-                           <h4>3. Predictive Customer Insights</h4>
-                           <p><strong>AI Model:</strong> Time Series Forecasting with LSTM Networks</p>
-                           <ul>
-                              <li>Churn prediction for high-value retailers</li>
-                              <li>Cross-selling opportunity identification using collaborative filtering</li>
-                              <li>Demand forecasting for inventory optimization</li>
-                              <li>Price sensitivity analysis for dynamic pricing strategies</li>
-                           </ul>
-                        </div>
-
-                        <div class="ai-feature">
-                           <h4>4. Gamified Performance Management</h4>
-                           <p><strong>AI Model:</strong> Multi-Armed Bandit algorithms for personalized gamification</p>
-                           <ul>
-                              <li>Adaptive reward systems based on individual motivation profiles</li>
-                              <li>Team collaboration challenges using game theory</li>
-                              <li>Achievement unlocking based on behavioral psychology principles</li>
-                              <li>Peer comparison and healthy competition frameworks</li>
-                           </ul>
-                        </div>
-
-                        <div class="ai-feature">
-                           <h4>5. Conversational Intelligence</h4>
-                           <p><strong>AI Model:</strong> Fine-tuned BERT models for domain-specific understanding</p>
-                           <ul>
-                              <li>Real-time transcription and analysis of customer interactions</li>
-                              <li>Sentiment tracking and mood analysis during sales conversations</li>
-                              <li>Objection handling recommendations based on conversation context</li>
-                              <li>Follow-up action suggestions using intent classification</li>
-                           </ul>
-                        </div>
+                        <h2>Our Differentiator: AI Modules that Power Performance Engineering</h2>
+                        <p>The real differentiator of our platform is its <strong>AI-powered personalisation engine</strong>. Unlike traditional tools that apply the same playbook to every sales executive, our system builds <strong>unique optimization workflows for each individual</strong>—shaping how they plan, sell, learn, and grow.</p>
+                        <p>This is made possible by a suite of specialised AI models working in harmony:</p>
+                        <ol>
+                           <li>
+                              <h4>Dynamic Performance Coaching</h4>
+                              <ul>
+                                 <li><strong>What it does:</strong> Provides real-time coaching tips based on sales performance.</li>
+                                 <li><strong>How it works:</strong> Combines gradient boosting (XGBoost) with neural nets to detect performance anomalies, identify skill gaps, and deliver <strong>micro-learning modules</strong> directly in the app.</li>
+                                 <li><strong>Impact:</strong> Field reps receive continuous <strong>contextual nudges</strong>, tailored to their performance and context.</li>
+                              </ul>
+                           </li>
+                           <li>
+                              <h4>Territory Optimisation</h4>
+                              <ul>
+                                 <li><strong>What it does:</strong> Designs efficient routes and ensures fair workload distribution.</li>
+                                 <li><strong>How it works:</strong> Uses <strong>graph neural networks (GNNs)</strong> to analyse territory maps, retailer density, and travel constraints. Reinforcement learning refines routes based on historical sales success.</li>
+                                 <li><strong>Impact:</strong> Executives reduce wasted travel time, while coverage and productivity increase.</li>
+                              </ul>
+                           </li>
+                           <li>
+                              <h4>Predictive Customer Insights</h4>
+                              <ul>
+                                 <li><strong>What it does:</strong> Anticipates customer needs and risks before they happen.</li>
+                                 <li><strong>How it works:</strong> <strong>LSTM (Long Short-Term Memory) models</strong> forecast demand patterns, while churn prediction models highlight at-risk retailers. Price sensitivity analysis suggests discount strategies.</li>
+                                 <li><strong>Impact:</strong> Reps proactively prevent stockouts, win back disengaged retailers, and tailor pitches more effectively.</li>
+                              </ul>
+                           </li>
+                           <li>
+                              <h4>Gamified Performance Management</h4>
+                              <ul>
+                                 <li><strong>What it does:</strong> Creates motivation systems that are personalised, not one-size-fits-all.</li>
+                                 <li><strong>How it works:</strong> Multi-armed <strong>bandit algorithms</strong> test different incentives (rewards, challenges, recognition) and learn which motivates each executive best.</li>
+                                 <li><strong>Impact:</strong> Engagement rises, and motivation becomes sustainable instead of short-term.</li>
+                              </ul>
+                           </li>
+                           <li>
+                              <h4>Conversational Intelligence</h4>
+                              <ul>
+                                 <li><strong>What it does:</strong> Turns sales calls into actionable insights.</li>
+                                 <li><strong>How it works:</strong> <strong>BERT-based NLP models</strong> transcribe calls, analyse sentiment, detect objections, and generate automated follow-up notes.</li>
+                                 <li><strong>Impact:</strong> Executives get <strong>AI-assisted conversations</strong>, improving closure rates and ensuring no retailer query slips through.</li>
+                              </ul>
+                           </li>
+                        </ol>
                      </div>
 
                      <div class="content-section">
-                        <h2>⚙️ Technical Architecture: AI Workflows & LLM Integration</h2>
-                        <p>Our platform leverages a sophisticated AI architecture combining multiple specialized models for optimal performance and cost efficiency:</p>
-
-                        <h3>Core AI Workflow Architecture</h3>
+                        <h2>⚙️ Our AI Architecture: Built for Precision, Latency, and Cost Efficiency</h2>
+                        <p>Our platform uses a modular, multi-model AI architecture. Each capability runs as its own service, so we can pair the right model with the right job—delivering real-time performance in the field without ballooning costs. The architecture has three pillars:</p>
+                        <ul>
+                           <li><strong>Multi-Model Orchestration -</strong> microservices that route each task to the best-fit model.</li>
+                           <li><strong>Right-Sized, Domain-Tuned LLMs -</strong> smaller specialized models for accuracy and efficiency.</li>
+                           <li><strong>Real-Time Workflow Engine -</strong> context-triggered pipelines that personalize every action.</li>
+                        </ul>
 
                         <div class="architecture-section">
-                           <h4>1. Multi-Model Orchestration</h4>
-                           <p>We deploy a microservices architecture where each AI capability is handled by specialized models:</p>
-                           <pre class="code-block">
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Mobile App    │────│  API Gateway    │────│ Model Router    │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-                                                        │
-                ┌─────────────────────────────────────────┼─────────────────┐
-                │                                         │                 │
-        ┌───────▼────────┐  ┌──────▼──────┐  ┌──────▼──────┐  ┌──────▼──────┐
-        │ Conversation   │  │ Performance │  │ Prediction  │  │ Optimization│
-        │ Intelligence   │  │ Analysis    │  │ Engine      │  │ Engine      │
-        │ (BERT-based)   │  │ (XGBoost)   │  │ (LSTM/GRU)  │  │ (RL/GNN)    │
-        └────────────────┘  └─────────────┘  └─────────────┘  └─────────────┘
-                           </pre>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                   <img src="../images/product/Architecture.jpg" alt="Application Architecture" class="img-fluid" style="padding-bottom: 10px;">
+                                </div>
+                             </div>
                         </div>
 
                         <div class="architecture-section">
-                           <h4>2. Customized Smaller LLM Models</h4>
+                           <h3>2. Customized Smaller LLM Models</h4>
                            <p>Instead of relying solely on large, general-purpose LLMs, we deploy domain-specific smaller models for efficiency and accuracy:</p>
 
                            <h5>Sales Assistant LLM (7B parameters)</h5>
@@ -527,27 +531,36 @@
                         </div>
 
                         <div class="architecture-section">
-                           <h4>3. Real-time AI Workflow Engine</h4>
-                           <p>Our workflow engine orchestrates AI models based on contextual triggers:</p>
-
-                           <div class="workflow-example">
-                              <h5>Example: Intelligent Visit Planning Workflow</h5>
-                              <ol>
-                                 <li><strong>Trigger:</strong> Field executive opens daily planning interface</li>
-                                 <li><strong>Data Collection:</strong> Current location, weather, traffic, retailer data</li>
-                                 <li><strong>AI Processing:</strong>
-                                    <ul>
-                                       <li>Territory optimization model calculates optimal route</li>
-                                       <li>Prediction engine forecasts retailer availability and mood</li>
-                                       <li>Customer insight LLM suggests conversation starters and offers</li>
-                                    </ul>
-                                 </li>
-                                 <li><strong>Output:</strong> Personalized daily plan with intelligent recommendations</li>
-                                 <li><strong>Continuous Learning:</strong> Performance feedback updates model weights</li>
-                              </ol>
-                           </div>
+                           <h3>3. Real-time AI Workflow Engine</h4>
+                           <p>A context-aware workflow engine orchestrates models based on <strong>triggers</strong>, <strong>policies</strong>, and <strong>data availability</strong>. It composes multiple predictions into a single, actionable outcome.</p>
+                           
+                           <p>Let's understand this with the example of our Intelligent Visit Planning workflow:</p>
+                           
+                           <p>A field executive opens the <strong>daily planning interface</strong>. This acts as a trigger and instantly, the system pulls in key data—location, traffic, weather, and retailer history.</p>
+                           
+                           <p>Behind the scenes, our <strong>multi-model AI architecture</strong> goes to work:</p>
+                           
+                           <ul>
+                              <li><strong>Territory Optimization Model (RL/GNN):</strong> Calculates the most efficient route, balancing distance, traffic, and sales potential.</li>
+                              <li><strong>Prediction Engine (LSTM/GRU):</strong> Forecasts which retailers are likely to be available today, their demand levels, and even their likely mood.</li>
+                              <li><strong>Customer Insight LLM (DistilBERT-based):</strong> Suggests tailored conversation starters, contextual offers, and risk alerts (e.g., churn signals).</li>
+                              <li><strong>Performance Analysis (XGBoost):</strong> Surfaces coaching prompts, reminding the executive of skill gaps to focus on during today's interactions.</li>
+                           </ul>
+                           
+                           <p>The result? A <strong>personalized daily plan</strong> with optimized routes, prioritized visits, and contextual recommendations—delivered in seconds. And as the executive completes their day, performance data flows back, helping the models learn and improve for tomorrow.</p>
                         </div>
                      </div>
+
+                      <div class="content-section">
+                         <h3>How the AI Pieces Map to Business Outcomes</h2>
+                         <ul>
+                            <li><strong>Dynamic Performance Coaching (XGBoost + NN):</strong> Real-time tips, skill-gap detection, micro-learning → better win rates & faster ramp</li>
+                            <li><strong>Intelligent Territory Optimization (GNN + RL):</strong> Route/visit frequency, expansion suggestions, resource allocation → more productive miles & visits</li>
+                            <li><strong>Predictive Customer Insights (LSTM + CF):</strong> Churn risk, cross-sell, demand forecasts, price elasticity → higher basket size & retention</li>
+                            <li><strong>Gamified Performance (Bandits + Game Theory):</strong> Adaptive rewards, team challenges, healthy benchmarks → sustained motivation without punitive feel</li>
+                            <li><strong>Conversational Intelligence (BERT-family):</strong> Live transcription, sentiment, objection handling, follow-ups → better conversations, fewer missed opportunities</li>
+                         </ul>
+                      </div>
 
                      <div style="margin-bottom: 50px;">
                         <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 25px; color: #1e3c72; border-bottom: 3px solid #ffc107; padding-bottom: 10px; display: inline-block;">📊 Measurable Business Outcomes</h2>
@@ -593,61 +606,6 @@
                      </div>
 
                      <div class="content-section">
-                        <h2>🔬 Data-Driven Experimentation Framework</h2>
-                        <p>Our approach to performance engineering is deeply rooted in continuous experimentation and optimization:</p>
-
-                        <h3>A/B Testing Infrastructure</h3>
-                        <ul class="styled-list">
-                           <li><strong>Feature Flag System:</strong> Granular control over feature rollouts with real-time monitoring</li>
-                           <li><strong>Statistical Significance:</strong> Bayesian A/B testing framework ensuring reliable results</li>
-                           <li><strong>Multi-variate Testing:</strong> Complex interactions between features analyzed simultaneously</li>
-                           <li><strong>Cohort Analysis:</strong> Long-term impact assessment across different user segments</li>
-                        </ul>
-
-                        <h3>Incremental Improvement Methodology</h3>
-                        <p>We follow a systematic approach to continuous optimization:</p>
-                        <ol class="methodology-list">
-                           <li><strong>Hypothesis Formation:</strong> Data-driven assumptions about performance improvements</li>
-                           <li><strong>Experiment Design:</strong> Controlled testing with clear success metrics</li>
-                           <li><strong>Implementation:</strong> Feature flags enable quick deployment and rollback</li>
-                           <li><strong>Measurement:</strong> Real-time analytics track impact on core KPIs</li>
-                           <li><strong>Learning:</strong> Insights inform next iteration of improvements</li>
-                           <li><strong>Scaling:</strong> Successful experiments rolled out to entire user base</li>
-                        </ol>
-
-                        <div class="experiment-example">
-                           <h4>Case Study: AI-Powered Call Scheduling</h4>
-                           <p><strong>Hypothesis:</strong> AI-optimized call scheduling based on retailer behavior patterns will increase successful interactions by 25%.</p>
-                           <p><strong>Experiment:</strong> 50% of field executives received AI scheduling recommendations, while 50% used traditional manual scheduling.</p>
-                           <p><strong>Results:</strong> AI-scheduled calls showed 38% higher success rate and 22% increase in order value.</p>
-                           <p><strong>Learning:</strong> Time-of-day and day-of-week preferences vary significantly by retailer type and geography.</p>
-                           <p><strong>Scale Impact:</strong> Full rollout resulted in 15% overall productivity improvement across all territories.</p>
-                        </div>
-                     </div>
-
-                     <div class="content-section">
-                        <h2>🚀 The Forward-Deployed Engineering Advantage</h2>
-                        <p>What sets our approach apart is the deep integration of our Forward-Deployed Engineers with client operations:</p>
-
-                        <h3>Embedded Engineering Methodology</h3>
-                        <ul class="styled-list">
-                           <li><strong>Field Immersion:</strong> Engineers spend weeks with field teams understanding real-world challenges</li>
-                           <li><strong>Stakeholder Integration:</strong> Regular interaction with NHQ teams, field executives, and retailers</li>
-                           <li><strong>Rapid Prototyping:</strong> Quick iteration cycles with immediate user feedback</li>
-                           <li><strong>Continuous Deployment:</strong> Daily releases with feature flags for controlled rollouts</li>
-                        </ul>
-
-                        <h3>Fractional CTO Impact</h3>
-                        <p>Our Fractional CTO service ensures strategic alignment and technical excellence:</p>
-                        <ul class="styled-list">
-                           <li><strong>Technology Roadmap:</strong> Long-term vision aligned with business objectives</li>
-                           <li><strong>Team Development:</strong> Upskilling internal teams for sustained innovation</li>
-                           <li><strong>Vendor Management:</strong> Strategic partnerships and technology stack optimization</li>
-                           <li><strong>Performance Monitoring:</strong> Continuous assessment of technical and business KPIs</li>
-                        </ul>
-                     </div>
-
-                     <div class="content-section">
                         <h2>🔮 Future of Field Sales Performance Engineering</h2>
                         <p>As we continue to innovate in this space, we're exploring cutting-edge technologies:</p>
 
@@ -668,6 +626,64 @@
                            <li><strong>Automated ML:</strong> Self-improving models with minimal human intervention</li>
                         </ul>
                      </div>
+
+                     <div class="content-section">
+                        <h2>How We Work</h2>
+                        <p>Our way of working is built around three core principles: continuous experimentation, deep client immersion, and strategic alignment. These pillars ensure that every engagement delivers measurable impact while remaining tightly aligned with business objectives.</p>
+
+                        <h3>🔬 1. Continuous Experimentation & Optimization</h3>
+                        <p>We believe progress comes from constant testing and refinement—not from big-bang rollouts. That's why we've built a Data-Driven Experimentation Framework at the heart of our methodology.</p>
+
+                        <h4>A/B Testing Infrastructure</h4>
+                        <ul class="styled-list">
+                           <li>Feature flags for granular rollouts and instant rollback</li>
+                           <li>Bayesian A/B testing for reliable statistical significance</li>
+                           <li>Multivariate testing to analyze complex feature interactions</li>
+                           <li>Cohort analysis to measure long-term impact on user segments</li>
+                        </ul>
+
+                        <h4>Incremental Improvement Cycle</h4>
+                        <ol class="methodology-list">
+                           <li>Form a hypothesis based on data</li>
+                           <li>Design a controlled experiment with clear KPIs</li>
+                           <li>Deploy via feature flags for safe testing</li>
+                           <li>Measure impact using real-time analytics</li>
+                           <li>Learn from the results and refine</li>
+                           <li>Scale successful improvements across the organization</li>
+                        </ol>
+
+                        <div class="experiment-example">
+                           <h4>Case in Action:</h4>
+                           <p>When exploring AI-powered call scheduling, we hypothesized that calls timed around retailer behavior patterns would boost outcomes. Instead of rolling it out blindly, we split the field team: half stayed on manual scheduling, half received AI recommendations.</p>
+                           <p>Within weeks, the AI group showed a 38% higher success rate and 22% uplift in order value. But more importantly, the data uncovered hidden insights: different retailer segments had distinct day-of-week and time-of-day preferences. That learning shaped not only the scheduling engine but also future playbooks for territory planning. After scaling the feature across all teams, territories saw a 15% overall productivity lift.</p>
+                        </div>
+                     </div>
+
+                     <div class="content-section">
+                        <h3>🚀 2. The Forward-Deployed Engineering Advantage</h3>
+                        <p>Technology only works when it's rooted in reality. That's why our engineers don't sit on the sidelines—they embed themselves directly with client teams.</p>
+                        <ul class="styled-list">
+                           <li><strong>Field Immersion:</strong> Weeks spent shadowing field executives to understand day-to-day challenges</li>
+                           <li><strong>Stakeholder Integration:</strong> Continuous interaction with NHQ, sales leadership, and retailers</li>
+                           <li><strong>Rapid Prototyping:</strong> Fast iteration cycles driven by immediate user feedback</li>
+                           <li><strong>Continuous Deployment:</strong> Daily releases with feature flags for safe, controlled rollouts</li>
+                        </ul>
+                        <p>This model ensures we're not building in isolation—we're co-creating solutions that solve real problems in the field.</p>
+                     </div>
+
+                     <div class="content-section">
+                        <h3>🎯 3. Strategic Alignment through Fractional CTO Services</h3>
+                        <p>To ensure solutions don't just work today but scale tomorrow, we provide Fractional CTO leadership for every engagement. This ensures both strategic alignment and technical excellence.</p>
+                        <ul class="styled-list">
+                           <li><strong>Technology Roadmap:</strong> Building a long-term vision aligned with business priorities</li>
+                           <li><strong>Team Development:</strong> Upskilling client teams to sustain innovation independently</li>
+                           <li><strong>Vendor Management:</strong> Optimizing tech stack and managing external partnerships</li>
+                           <li><strong>Performance Monitoring:</strong> Ongoing assessment of both business and technical KPIs</li>
+                        </ul>
+                        <p>👉 Together, these three pillars—Experimentation, Embedded Engineering, and Strategic Alignment—define how we work. It's a methodology that balances innovation with pragmatism, ensuring every solution is validated, adopted, and impactful.</p>
+                     </div>
+
+                     
 
                      <div class="content-section">
                         <h2>💡 Getting Started with Performance Engineering</h2>
@@ -704,6 +720,7 @@
          </div>
       </div>
       <!-- end blog article -->
+      </main>
 
       <!-- contact testimonial-->
       <div id="contact" class="contact">
@@ -717,6 +734,7 @@
             </div>
             <div class="row">
                <div class="col-md-6">
+                  <h3 id="contact-form-title" class="sr-only">Contact Form</h3>
                   <div class="address">
                      <p><a aria-label="Chat on WhatsApp" href="https://wa.me/+919686269013"> <img alt="Chat on WhatsApp" src="../images/wa/WhatsAppButtonWhiteMedium.svg" /></a></p>
                      <p><a href="https://wa.me/+919686269013">+91 9686269013</a></p>
@@ -727,30 +745,41 @@
                      <p>Phone: 
                         <br/><a href="tel:+919686269013">+91 9686269013</a>
                         <br/><a href="tel:+916291833389">+91 6291833389</a>
+                     </p>
                      <p>E-mail: 
                         <br/><a href="mailto:admin@rupantar.tech">admin@rupantar.tech</a>
                         <br/><a href="mailto:itmvikastiwari@gmail.com">itmvikastiwari@gmail.com</a>
+                     </p>
                   </div>
                </div>
                <div class="col-md-6">
-                  <form id="my-form" class="main_form" method="POST" action="https://formspree.io/f/xzblqore">
+                  <form id="my-form" class="main_form" method="POST" action="https://formspree.io/f/xzblqore" aria-labelledby="contact-form-title">
                      <div class="row">
                         <div class="col-sm-12">
-                           <input class="contactus" placeholder="Full Name" type="text" name="Full Name">
+                           <label for="full-name" class="sr-only">Full Name</label>
+                           <input id="full-name" class="contactus" placeholder="Full Name" type="text" name="Full Name" required aria-required="true" aria-describedby="name-error">
+                           <div id="name-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
                         <div class="col-sm-12">
-                           <input class="contactus" placeholder="Email" type="text" name="Email">
+                           <label for="email" class="sr-only">Email</label>
+                           <input id="email" class="contactus" placeholder="Email" type="email" name="Email" required aria-required="true" aria-describedby="email-error">
+                           <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
                         <div class="col-sm-12">
-                           <input class="contactus" placeholder="Phone" type="text" name="Phone">
+                           <label for="phone" class="sr-only">Phone</label>
+                           <input id="phone" class="contactus" placeholder="Phone" type="tel" name="Phone" aria-describedby="phone-error">
+                           <div id="phone-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
                         <div class="col-sm-12">
-                           <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
+                           <label for="message" class="sr-only">Message</label>
+                           <textarea id="message" class="textarea" placeholder="Message" name="Message" rows="5" required aria-required="true" aria-describedby="message-error"></textarea>
+                           <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
                         <div class="col-sm-12">
-                           <button id="my-form-button" class="send">Send</button>
+                           <button id="my-form-button" class="send" type="submit" aria-describedby="submit-help">Send Message</button>
+                           <div id="submit-help" class="sr-only">Click to send your message to Rupantar Technologies</div>
                         </div>
-                        <p id="my-form-status"></p>
+                        <div id="my-form-status" role="status" aria-live="polite" aria-atomic="true"></div>
                      </div>
                   </form>
                </div>
@@ -986,10 +1015,63 @@
 
       <script>
           var form = document.getElementById("my-form");
-          
+
+          // Form validation function
+          function validateForm() {
+            var isValid = true;
+            var errors = {};
+
+            // Clear previous errors
+            document.querySelectorAll('.error-message').forEach(function(el) {
+              el.textContent = '';
+            });
+
+            // Validate full name
+            var fullName = document.getElementById('full-name').value.trim();
+            if (!fullName) {
+              errors.name = 'Full name is required';
+              document.getElementById('name-error').textContent = errors.name;
+              isValid = false;
+            }
+
+            // Validate email
+            var email = document.getElementById('email').value.trim();
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email) {
+              errors.email = 'Email is required';
+              document.getElementById('email-error').textContent = errors.email;
+              isValid = false;
+            } else if (!emailRegex.test(email)) {
+              errors.email = 'Please enter a valid email address';
+              document.getElementById('email-error').textContent = errors.email;
+              isValid = false;
+            }
+
+            // Validate message
+            var message = document.getElementById('message').value.trim();
+            if (!message) {
+              errors.message = 'Message is required';
+              document.getElementById('message-error').textContent = errors.message;
+              isValid = false;
+            }
+
+            return isValid;
+          }
+
           async function handleSubmit(event) {
             event.preventDefault();
+
+            if (!validateForm()) {
+              return;
+            }
+
             var status = document.getElementById("my-form-status");
+            var submitButton = document.getElementById("my-form-button");
+
+            // Disable submit button and show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
             var data = new FormData(event.target);
             fetch(event.target.action, {
               method: form.method,
@@ -999,22 +1081,63 @@
               }
             }).then(response => {
               if (response.ok) {
-                status.innerHTML = "Thanks reaching out! Will get back to you soon!";
-                form.reset()
+                status.innerHTML = "Thanks for reaching out! We'll get back to you soon.";
+                status.style.color = '#28a745';
+                form.reset();
+
+                // Clear any remaining errors
+                document.querySelectorAll('.error-message').forEach(function(el) {
+                  el.textContent = '';
+                });
               } else {
                 response.json().then(data => {
                   if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
                   } else {
-                    status.innerHTML = "Oops! There was a problem submitting your form"
+                    status.innerHTML = "Oops! There was a problem submitting your form. Please try again.";
                   }
+                  status.style.color = '#dc3545';
                 })
               }
             }).catch(error => {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+              status.innerHTML = "Oops! There was a problem submitting your form. Please check your connection and try again.";
+              status.style.color = '#dc3545';
+            }).finally(() => {
+              // Re-enable submit button
+              submitButton.disabled = false;
+              submitButton.textContent = 'Send Message';
             });
           }
-          form.addEventListener("submit", handleSubmit)
+
+          form.addEventListener("submit", handleSubmit);
+
+          // Add real-time validation feedback
+          document.getElementById('full-name').addEventListener('blur', function() {
+            if (!this.value.trim()) {
+              document.getElementById('name-error').textContent = 'Full name is required';
+            } else {
+              document.getElementById('name-error').textContent = '';
+            }
+          });
+
+          document.getElementById('email').addEventListener('blur', function() {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!this.value.trim()) {
+              document.getElementById('email-error').textContent = 'Email is required';
+            } else if (!emailRegex.test(this.value.trim())) {
+              document.getElementById('email-error').textContent = 'Please enter a valid email address';
+            } else {
+              document.getElementById('email-error').textContent = '';
+            }
+          });
+
+          document.getElementById('message').addEventListener('blur', function() {
+            if (!this.value.trim()) {
+              document.getElementById('message-error').textContent = 'Message is required';
+            } else {
+              document.getElementById('message-error').textContent = '';
+            }
+          });
       </script>
       
       <!-- Hamburger Menu JavaScript -->
