@@ -192,6 +192,71 @@
     </image:image>
   </url>
 
+  <!-- AI Agent Expertise - LinkedIn Articles -->
+  <url>
+    <loc>https://www.linkedin.com/pulse/agentic-rag-mcp-new-hybrid-ai-workflows-architecture-were-mukherjee-swlwf/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-19</news:publication_date>
+      <news:title>Agentic RAG, MCP, and the New Hybrid AI Workflows Architecture</news:title>
+      <news:keywords>agentic RAG, model context protocol, MCP, AI workflows, n8n, LangChain, LangGraph, vector databases, AI agents, hybrid AI architecture, custom AI agents</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.linkedin.com/pulse/building-healthcare-control-tower-agentic-rag-mcp-n8n-arpan-mukherjee-kkqef/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-21</news:publication_date>
+      <news:title>Building a Healthcare Control Tower with Agentic RAG, MCP, and n8n</news:title>
+      <news:keywords>healthcare AI, control tower, agentic RAG, hospital analytics, healthcare technology, AI agents healthcare, medical AI systems, hospital management AI</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.linkedin.com/pulse/evolving-generative-ai-data-stack-financial-arpan-mukherjee-hgrqf/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-29</news:publication_date>
+      <news:title>Evolving Generative AI Data Stack of a Financial Marketplace</news:title>
+      <news:keywords>generative AI, financial AI, fintech, AI data stack, financial marketplace, AI agents finance, financial technology, automated finance</news:keywords>
+    </news:news>
+  </url>
+
+  <url>
+    <loc>https://www.linkedin.com/pulse/reinforcement-learning-llm-projects-teaching-ai-learn-arpan-mukherjee-j8xzf/</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Rupantar Technologies</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-05</news:publication_date>
+      <news:title>Reinforcement Learning for LLM Projects — Teaching AI to Learn Like Your Best Store Manager</news:title>
+      <news:keywords>reinforcement learning, RLHF, LLM training, AI agents, machine learning, adaptive AI, self-improving AI, AI optimization</news:keywords>
+    </news:news>
+  </url>
+
   <!-- Client Case Studies - High Priority for Authority -->
   <url>
     <loc>https://rupantar.tech/client/Quikr.html</loc>
